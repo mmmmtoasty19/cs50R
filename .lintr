@@ -1,0 +1,13 @@
+linters: linters_with_defaults(
+    line_length_linter(120) 
+    , commented_code_linter = NULL
+    , object_usage_linter = NULL
+    , indentation_linter(
+        hanging_indent_style = "never"
+    ),
+    box_func_import_count_linter = box.linters::box_func_import_count_linter(),
+    box_separate_calls_linter = box.linters::box_separate_calls_linter(),
+    box_trailing_commas_linter = box.linters::box_trailing_commas_linter(),
+    box_universal_import_linter = box.linters::box_universal_import_linter()
+    ) # see vignette("lintr")
+encoding: "UTF-8"
